@@ -45,6 +45,6 @@ public class MySimpleStack implements SimpleStack {
 		if(!array.isEmpty())
 			return array.remove(array.size()-1);
 		else
-			return "";
+			return null;
 	}
 }
