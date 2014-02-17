@@ -42,6 +42,9 @@ public class MySimpleStack implements SimpleStack {
 	* @throws EmptyStackException if this stack is empty.
 	*/
 	public String pop() throws EmptyStackException {
-		return array.remove(array.size()-1);
+		if(!array.isEmpty())
+			return array.remove(array.size()-1);
+		else
+			return "";
 	}
 }
